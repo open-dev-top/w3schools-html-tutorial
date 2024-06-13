@@ -1,8 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
   <body>
-    <h1>The target Attribute</h1>
+    content
+    <a href="#C1">The target Attribute</a>
+    <a href="#C2">Absolute URLs vs. Relative URLs</a>
+    <a href="#C3">Use an Image as a Link</a>
+    <a href="#C4">Link to an Email Address</a>
+    <a href="p13_css.css#C5">Button as a Link</a>
+
+    <h1 id="C1">The target Attribute</h1>
     <a
       href="https://www.w3schools.com/"
       target="_self"
@@ -13,7 +46,7 @@
     <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a>
     <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
 
-    <h1>Absolute URLs vs. Relative URLs</h1>
+    <h1 id="C2">Absolute URLs vs. Relative URLs</h1>
     <h2>Absolute URLs</h2>
     <p><a href="https://www.w3.org/">W3C</a></p>
     <p><a href="https://www.google.com/">Google</a></p>
@@ -22,13 +55,13 @@
     <p><a href="/Tutorial/images/w3schools.jpg">HTML Images</a></p>
     <p><a href="p13_css.css">CSS Tutorial</a></p>
 
-    <h2>Use an Image as a Link</h2>
+    <h1 id="C3">Use an Image as a Link</h1>
     <a href="images/img_girl.jpg"><img src="images/w3schools.jpg" /></a>
 
-    <h2>Link to an Email Address</h2>
+    <h1 id="C4">Link to an Email Address</h1>
     <a href="mailto:someone@example.com">Send email</a>
 
-    <h2>Button as a Link</h2>
+    <h1 id="C5">Button as a Link</h1>
     <button onclick="document.location='images/img_girl.jpg'">
       Girl's image
     </button>

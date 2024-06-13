@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <style>
+      /* table, */
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-radius: 10px;
+        border-style: dotted;
+      }
+      th,
+      /* td {
+        background-color: #96d4d4;
+      } */
+      th {
+        text-align: center;
+      }
+      th,
+      td {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      table {
+        border-spacing: 5px;
+      }
+      tr:hover {
+        background-color: #96d4d4;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <caption>
+        Designed by Alex
+      </caption>
+      <colgroup>
+        <col span="2" />
+        <col span="1" style="visibility: collapse" />
+        <col span="1" style="background-color: pink" />
+      </colgroup>
+      <tr>
+        <th></th>
+        <th colspan="3">MINI SCHEDULE</th>
+      </tr>
+      <tr>
+        <th>DAY</th>
+        <th>Monday</th>
+        <th style="width: 50%">Tuesday</th>
+        <th>Wednesday</th>
+      </tr>
+      <tr style="height: 200px">
+        <th rowspan="2">ACTIVITY</th>
+        <td>Work</td>
+        <td>Break</td>
+        <td>Work</td>
+      </tr>
+      <tr>
+        <td>Run</td>
+        <td>Learn</td>
+        <td>Swim</td>
+      </tr>
+    </table>
+  </body>
+</html>
